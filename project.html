@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="max-image-preview:large">
+  <title>Document</title>
+  <script src="jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(".noodles1,.noodles2,#noodles").click(function () {
+        $(".noodlesrec").toggle();
+      })
+      $(".painchocolat2,.painchocolat1,#cabbage").click(function () {
+        $(".painrec").toggle();
+      })
+      $("#menu1").click(function () {
+        $(".avo1,.avo").slideToggle();
+      })
+    });
+  </script>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      color: white;
+
+    }
+
+    .men {
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+
+
+    }
+
+    .left {
+      float: left;
+      margin-right: 40px;
+    }
+
+    li {
+
+      margin-right: 85px;
+      display: table-cell;
+      position: relative;
+      padding: 15px 0;
+    }
+
+    .nav {
+
+      padding: 0;
+      list-style: none;
+      display: table;
+
+      text-align: center;
+    }
+
+    .a {
+      text-decoration: none;
+      letter-spacing: 0.15em;
+      display: inline-block;
+      margin-left: 50px;
+      padding-bottom: 10px;
+      position: relative;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+
+    }
+
+    .a:after {
+      background: none repeat scroll 0 0 scroll;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      transition-property: background-color;
+      position: absolute;
+      background: rgb(255, 68, 0);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+
+      transition-delay: 0.4s;
+      transition-timing-function: linear;
+
+    }
+
+    .a:hover:after {
+      width: 100%;
+      left: 0;
+
+
+    }
+
+    .a:hover {
+      color: rgb(255, 68, 0);
+      transition-duration: 2s;
+    }
+
+    @media screen and (max-height: 300px) {
+      ul {
+        margin-top: 40px;
+      }
+    }
+
+    .container,
+    .img1 {
+      position: relative;
+    }
+
+    /* .img2{
+ position: absolute;
+ 
+ } */
+    .noodlesrec {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 450px;
+      background-color: rgba(146, 162, 41, 0.7);
+      display: none;
+    }
+
+    .noodles1 {
+      position: absolute;
+      bottom: 80px;
+      background-color: black;
+      text-align: center;
+      width: 130px;
+
+      left: 46px;
+
+    }
+
+    .noodles2 {
+      position: absolute;
+      bottom: 50px;
+      text-align: center;
+      width: 170px;
+      background-color: white;
+      color: black;
+      font-size: 20px;
+      font-weight: bolder;
+
+
+      left: 46px;
+
+    }
+
+    .noodles2:hover {
+      scale: 1.19;
+      ;
+    }
+
+    .noodles1:hover {
+      scale: 1.19;
+
+    }
+
+    #cabbage {
+      position: absolute;
+      left: 850px;
+      top: 20px;
+    }
+
+    .painrec {
+      position: absolute;
+      top: 30px;
+      left: 860px;
+      width: 350px;
+      display: none;
+      background-color: rgba(146, 110, 74, 0.7);
+
+    }
+
+    .painchocolat1 {
+      position: absolute;
+      top: 400px;
+      left: 870px;
+      background-color: black;
+      text-align: center;
+      font-size: 15px;
+      line-height: 28px;
+      width: 150px;
+    }
+
+    .painchocolat2 {
+      position: absolute;
+      top: 430px;
+      left: 870px;
+      color: #000;
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      width: 170px;
+      font-weight: bolder;
+    }
+
+    .painchocolat2:hover {
+      scale: 1.19;
+    }
+
+    .painchocolat1:hover {
+      scale: 1.19;
+    }
+
+
+    #bread {
+      position: absolute;
+      top: 593px;
+      left: 520px;
+    }
+
+    #chicken {
+      position: absolute;
+      top: 493px;
+      left: 820px;
+    }
+
+    .gluten1 {
+
+      position: absolute;
+      top: 955px;
+      left: 45px;
+
+      background-color: black;
+      text-align: center;
+      font-size: 16px;
+      line-height: 28px;
+      width: 130px;
+      font-weight: bolder;
+    }
+
+    .gluten2 {
+      position: absolute;
+      top: 990px;
+      left: 45px;
+      color: #000;
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      width: 270px;
+      font-weight: bolder;
+
+    }
+
+    .gluten2:hover {
+      scale: 1.19;
+    }
+
+    .gluten1:hover {
+      scale: 1.19;
+    }
+
+    .bread1 {
+      position: absolute;
+      top: 753px;
+      left: 560px;
+      color: #000;
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      width: 170px;
+      font-weight: bolder;
+    }
+
+    .bread1:hover {
+      scale: 1.19;
+    }
+
+    #tea {
+      position: absolute;
+      top: 800px;
+      left: 520px;
+    }
+
+    .tea1 {
+      position: absolute;
+      top: 980px;
+      left: 560px;
+      color: #000;
+      background-color: white;
+      text-align: center;
+      font-size: 13px;
+      line-height: 18px;
+      width: 130px;
+      font-weight: bolder;
+    }
+
+    .tea1:hover {
+      scale: 1.19;
+    }
+
+    .chicken1 {
+      position: absolute;
+      top: 980px;
+      left: 860px;
+      color: #000;
+      background-color: white;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+      width: 130px;
+      font-weight: bolder;
+    }
+
+    .chicken2 {
+      position: absolute;
+      top: 1015px;
+      left: 860px;
+
+      background-color: black;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      width: 190px;
+      font-weight: bolder;
+    }
+
+    .chicken1:hover {
+      scale: 1.19;
+    }
+
+    .chicken2:hover {
+      scale: 1.19;
+    }
+
+    .text {
+      text-align: center;
+      width: 300px;
+      position: absolute;
+      top: 250px;
+      color: #000;
+      line-height: 50px;
+      font-weight: bolder;
+    }
+
+    #menu2,
+    #menu1,
+    #menu3 {
+      width: 300px;
+      height: 250px;
+    }
+
+    .menu,
+    .menu2 {
+      margin: 20px;
+      position: relative;
+      top: 30px;
+    }
+
+    .menu3 {
+      position: relative;
+    }
+
+    #pol {
+      width: 300px;
+      height: 340px;
+      background-color: #fff;
+    }
+
+    #pol:hover {
+      box-shadow: 20px 10px gray;
+      perspective: 100px;
+    }
+    .avo{
+       position: absolute;
+      top: 360px;
+      left: 0px;
+      width: 300px;
+     display: none;
+      background-color: rgba(146, 110, 74, 0.7);
+
+    }
+    .avo1{
+      position: absolute;
+      top: 460px;
+      display: none;
+      left: 340px;
+      width: 1040px;
+      height: 323px;
+      background-color: rgba(146, 110, 74,0.7);
+    }
+
+    #pol2 {
+      position: absolute;
+      top: 00px;
+      left: 360px;
+      width: 300px;
+      height: 340px;
+      background-color: #fff;
+    }
+
+    #pol2:hover {
+      box-shadow: 20px 10px gray;
+      perspective: 100px;
+    }
+
+    #pol3 {
+      position: absolute;
+      top: 0px;
+      left: 720px;
+      width: 300px;
+      height: 340px;
+      background-color: #fff;
+    }
+
+    #pol3:hover {
+      box-shadow: 20px 10px gray;
+      perspective: 100px;
+    }
+
+    #pol4 {
+      position: absolute;
+      top: 0px;
+      left: 1080px;
+      width: 300px;
+      height: 340px;
+      background-color: #fff;
+    }
+
+    #pol4:hover {
+      box-shadow: 20px 10px gray;
+      perspective: 100px;
+    }
+
+    .dropdown1 {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content1 {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+
+    }
+
+    .div {
+      display: none;
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- menu icon    -->
+  <div class="left">
+    <div class="men"></div>
+    <div class="men"></div>
+    <div class="men"></div>
+  </div>
+
+  <header>
+    <h2 id="title" style="margin-right: 20px; font-size: 40px;">hungry channel!</h2>
+  </header>
+  <hr style="color: gray; background-color: gray;">
+
+  <ul class="nav">
+
+    <li><a href="" class="a" id="pasta">PASTA/NOODLES</a></li>
+    <li><a href="" class="a">BREAKFAST/BRUNCH</a></li>
+    <li><a href="" class="a">GLUTEN-FREE</a></li>
+    <li><a href="" class="a">CONTENENTAL</a></li>
+    <li><a href="" class="a">INDIAN</a></li>
+  </ul>
+  <div class="dropdown1">
+
+    <div class="div">
+      br br</div>
+  </div>
+  </div>
+  <hr style="height: 0.04px; background-color: gray;">
+  <div class="container">
+    <div class="img1">
+
+      <img id="noodles" src="singapore-noodles-8932w.webp" alt="" width="800px" height="550px"
+        style="margin:20px 20px;">
+      <div class="noodles1">Chinese Noodles</div>
+      <div class="noodles2">Singapore Noodles</div>
+      <div class="noodlesrec">
+        <h3>How to make Singapore noodles</h3>
+        <b>How to make Singapore noodles</b> – soak the noodles in a large bowl of cold tap water until pliable and
+        slightly soft. Drain well. <br>
+        <b>Prep the vegetables and proteins</b> – slice the onion, julienne the carrot and bell pepper, and cut the
+        green onions in to 1-2 inch lengths. Cut the meats into slices/bite sizes and peel and clean the shrimp. <br>
+        <b>Prep the seasoning </b> – in a bowl, mix together chicken stock, oyster sauce, curry powder, toasted sesame
+        oil, salt, and sugar. Set aside. <br>
+        <b>Cook the eggs</b> – lightly beat the eggs, season with salt, then scramble in a large pan or wok until mostly
+        set. Scoop the eggs out and set aside. <br>
+        <b>Cook the proteins</b> – if your pan needs it, give a bit of a wipe then stir fry the proteins, moving and
+        tossing, until they’re cooked. <br>
+        <b>Cook the vegetables</b> – add the vegetables to the wok/pan and cook, stirring, and tossing, until the
+        vegetables are crisp. This step won’t take long at all. <br>
+        <b>Mix and Toss</b> – add the noodles, the sauce you made earlier, and the eggs. Use a scooping lifting motion
+        to toss and combine everything together until the noodles are hot and the ingredients are well distributed and
+        seasoned. Taste and adjust if needed. <br>
+        Enjoy – eat up while fresh and hot!
+      </div>
+    </div>
+    <div class="img2">
+      <img id="cabbage" src="painchocolat.jpg" alt="" width="560px" height="450px">
+      <div class="painchocolat1">French Bakery</div>
+      <div class="painchocolat2">Pain au Chocolats</div>
+      <div class="painrec" style="font-size: 14px;">
+        <h3>How to make Pain au Chocolats</h3>
+        <b>1.Preliminary notes</b> <br> <b>2.Make the dough <br> 3.Remove </b> dough from the bowl and, with floured
+        hands, work it into a ball. Place the dough on a lightly floured silicone baking mat lined, lightly floured
+        parchment paper lined, or lightly floured baking sheet. <br>
+        <b> 4.Shape the dough:</b> You’re rolling it out into a rectangle in this step, so shaping it with your hands
+        first helps the stretchy dough. <br>
+        <b>5.Long rest:</b>Cover the rolled out dough with plastic wrap or aluminum foil, place the entire baking sheet
+        in the refrigerator and allow the covered dough to rest in the refrigerator for 4 hours or overnight. <br>
+        <b>6.Butter layer (begin this 35 minutes before the next step so the butter can chill for 30 minutes)</b>
+        <br><b>7.Laminate the dough </b><br>
+        <b>8.Shape the croissants</b> <br> <b>9.Egg wash:</b>Brush each lightly with egg wash. <br>
+        <b>10.Bake the croissant</b>
+      </div>
+    </div>
+    <div class="img3">
+      <img id="gluten" src="glutenfree.jpg" alt="" width="500px" height="450px" style="margin:20px 20px;"">
+  <div class=" gluten1">GLUTEN-FREE
+    </div>
+    <div class="gluten2">Cinnamon-Crisp Coffee Cake</div>
+
+  </div>
+  <div class="img4">
+    <img id="bread" src="bread.jpg" alt="" width="270px" height="180px" style="margin:20px 20px;">
+    <div class="bread1">Sandwich Bread</div>
+    <img id="tea" src="butterfly.jpg" alt="" width="270px" height="240px" style="margin:20px 20px;">
+    <div class="tea1">BUTTERFLY PEA TEA LEMONADE</div>
+    <img id="chicken" src="Butter-Chicken.jpg" alt="" width="570px" height="546px" style="margin:20px 20px;">
+    <div class="chicken1">Indian</div>
+    <div class="chicken2">Murgh Makhani</div>
+  </div>
+  <p style="text-align: center;">--RECIPES--</p>
+  <div class="menu">
+    <div id="pol">
+      <img id="menu1" src="avocado-bulgur-salad.webp" alt="">
+      <div class="text">
+        <p>AVOCADO BULGUR SALAD</p>
+      </div>
+      <div class="avocado">
+        <div class="avo">
+          <h1 style="background-color: #000;">AVOCADO BULGUR SALAD</h1>
+          Ingredients
+          <b>
+            <ul>4 servings</ul>
+          </b>
+          ¾ cup bulgur <br>
+          ½ tsp. ground cumin <br>
+          Kosher salt <br>
+          5
+  
+          Tbsp. extra-virgin olive oil, divided <br>
+          12
+  
+          scallions <br>
+          ½
+  
+          cup coarsely chopped raw pistachios <br>
+          Zest and juice of 1 lemon <br>
+          1–2
+  
+          jalapeños, very thinly sliced <br>
+          ½
+  
+          cup coarsely chopped cilantro, plus more for serving <br>
+          Freshly ground black pepper <br>
+          2
+  
+          large avocados, cut into large pieces <br>
+          3
+  
+          cups baby or trimmed mature arugula <br>
+          
+          
+      </div> <br>
+      
+      <div class="avo1"> 
+        <h3>Preparation</h3>
+          <hr style="color: white;background-color: #fff; width: 4px;"> 
+          <b>Step 1</b>  Bring ¾ cup water to a boil in a small saucepan. Stir in ¾ cup bulgur, ½ tsp. ground cumin, and a pinch of
+        kosher salt, then immediately cover and remove from heat. Let sit 10 minutes. Fluff bulgur with a fork.
+        <br>   <br>
+        <b>Step 2</b>
+        Meanwhile, heat 2 Tbsp. olive oil in a large skillet over medium-high. Cook 12 scallions, turning occasionally,
+        until well charred, about 5 minutes. Transfer to a cutting board, leaving excess oil behind in pan, and coarsely
+        chop.
+        <br> <br>
+        <b>Step 3</b>
+        Reduce heat to medium; add ½ cup coarsely chopped raw pistachios to same pan. Cook, stirring often, until
+        browned in spots, 1–2 minutes. Transfer to a small bowl; season with salt.
+        <br> <br>
+        <b>Step 4</b>
+        Toss bulgur, scallions, zest and juice of 1 lemon, 1–2 jalapeños, very thinly sliced, depending on your heat
+        preference, ½ cup coarsely chopped cilantro, and remaining 3 Tbsp. olive oil in a large bowl to combine; season
+        with lots of salt and freshly ground black pepper.
+        <br> <br>
+        <b>Step 5</b>
+        Add 2 large avocados, cut into large pieces and 3 cups baby or trimmed mature arugula to salad and toss gently
+        to combine. Divide among plates and top with pistachios and more cilantro; season with more pepper.</div>
+    </div>
+      </div>
+    <div id="pol2">
+      <img id="menu2" src="Sheet-Pan-Gnocchi.webp" alt="">
+      <div class="text">
+        <p>SHEET PAN GNOCCHI</p>
+      </div>
+    </div>
+    <div id="pol3">
+      <img id="menu3" src="malai-kofta.jpg" alt="">
+      <div class="text">
+        <p>MALAI KOFTA</p>
+      </div>
+    </div>
+    <div id="pol4">
+      <img id="menu3" src="biryani.jpg" alt="">
+      <div class="text">
+        <p>BIRYANI</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
